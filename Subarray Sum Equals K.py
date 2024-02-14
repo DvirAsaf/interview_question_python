@@ -25,7 +25,6 @@ def subarraySum(nums, k):
     # Iterate through the array
     for i in range(len(nums)):
         sums += nums[i]  # Update cumulative sum
-
         # If (current cumulative sum - k) exists in the dictionary, add its count to the result
         if sums - k in d:
             count += d[sums - k]
