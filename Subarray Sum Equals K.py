@@ -15,6 +15,7 @@ Input: nums = [1,2,3], k = 3
 Output: 2
 """
 
+
 def subarraySum(nums, k):
     # Dictionary to store cumulative sums and their counts
     d = {0: 1}
@@ -36,6 +37,7 @@ def subarraySum(nums, k):
             d[sums] = 1
 
     return count
+
 
 if __name__ == '__main__':
     print(subarraySum([1,1,1], 2))
