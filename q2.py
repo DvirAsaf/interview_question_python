@@ -9,8 +9,9 @@ output: 1 ---> 1+3 = 4, can't take both (3,1) and (1,3) since they overlap
 
 """
 
+
 def max_non_overlapping_pairs(arr):
-    # Find the pair with maximum sum
+    # Find the pair with a maximum sum
     max_sum = float('-inf')
     for i in range(len(arr) - 1):
         if arr[i] + arr[i + 1] > max_sum:
